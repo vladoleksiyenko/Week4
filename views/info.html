@@ -9,5 +9,20 @@
     </head>
     <body>
         <h1>Hello world</h1>
+        <p>Name: {{@name}} {{@lastinitial}}</p>
+        <p>Age: {{@age}}</p>
+        <h2>A list of fruits</h2>
+        <repeat group="{{@fruitList}}" value="{{@fruit}}">
+            <p>{{@fruit}}</p>
+        </repeat>
+
+        <h2>List of cars</h2>
+        <repeat group="{{@carList}}" value="{{@car}}">
+            <p>{{@car}}</p>
+        </repeat>
+
+        <repeat group="{{@studentList}}" key="{{@sid}}" value="{{@name}}">
+            <p>{{@sid}} - {{@name}}</p>
+        </repeat>
     </body>
 </html>
